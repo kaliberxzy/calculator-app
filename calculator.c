@@ -3,6 +3,7 @@
 int addition(int a, int b);
 int subtraction(int a, int b);
 int multiplication(int a, int b);
+double division(int a, int b);
 
 int main () {
 
@@ -12,6 +13,7 @@ int main () {
 	printf("%d\n",addition(a, b));
 	printf("%d\n",subtraction(a, b));
 	printf("%d\n", multiplication(a, b));
+	printf("%lf\n", division(a, b));	
 
 	return 0;
 }
@@ -26,4 +28,11 @@ int subtraction(int a, int b){
 
 int multiplication(int a, int b){
 	return a*b;
+}
+
+double division(int a, int b){
+	if (b!=0)
+		return a / b;
+	else
+		return -1;
 }
