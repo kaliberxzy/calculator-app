@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int addition(int a, int b); 
+int addition(int a, int b);
+int subtraction(int a, int b);
 
 int main () {
 
@@ -8,10 +9,15 @@ int main () {
 	int b = 3;
 
 	printf("%d",addition(a, b));
-	
+	printf("%d",subtraction(a, b));
+
 	return 0;
 }
 
 int addition(int a, int b){
 	return a + b;
+}
+
+int subtraction(int a, int b){
+	return a - b;
 }
